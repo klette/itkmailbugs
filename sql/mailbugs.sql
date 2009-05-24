@@ -33,7 +33,7 @@ CREATE TABLE bug (
 	created_by VARCHAR NOT NULL
 );
 
-CREATE bug_comment (
+CREATE TABLE bug_comment (
 	bug_comment SERIAL PRIMARY KEY NOT NULL,
 	bug INTEGER REFERENCES bug NOT NULL,
 
