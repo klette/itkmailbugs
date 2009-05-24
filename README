@@ -1,0 +1,22 @@
+ITK::MailBugs
+==============
+
+What is MailBugs?
+-----------------
+
+MailBugs is a software package developed for tracking and handling
+bugs (and/or tasks) using email only.
+
+Why?
+------------------
+
+Most developers allready spend a lot of time using emails, and are
+proficient and fast using email. Most developers dont like having to
+click in some sort of graphical user interface, when the same job could
+be done in 5 seconds using only commands.
+
+What does ITK stand for?
+------------------------
+
+ITK is the IT-section at the student society in Trondheim.
+See http://itk.samfundet.no for more information.
