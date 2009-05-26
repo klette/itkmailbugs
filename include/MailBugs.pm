@@ -36,5 +36,26 @@ sub create_project {
         }
 }
 
+sub project_exists {
+    my ($project_name, $dbh) = @_;
+    my @res = $dbh->fetchrow_array("SELECT COUNT(*) FROM project WHERE project_name = ?",
+        undef, $project_name);
+    if ($res[0] > 0){
+        return 1;
+    }
+    return 0;
+}
+
+sub create_bug {
+    my ($title, $details, $creator, $dbh) = @_;
+    $dbh->do("INSERT INTO bug (title, description, created_by)
+              VALUES (?,?,?)", undef, $title, $details, $creator);
+}
+
+sub comment_bug {
+    my ($bug, $text, $creator, $dbh) = @_;
+    $dbh->do("INSERT INTO bug_comment ()")
+}
+
 1;
 
