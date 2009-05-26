@@ -32,6 +32,7 @@ h3. Headers for interacting with MailBugs
 |X-MailBugs-Milestone|string|Assign the bug to a milestone|
 
 h3. Headers from MailBugs
+
 |X-MailBugs-ID|integer|Bug-id|
 |X-MailBugs-Status|['open','resolved','wontfix']|The status of a bug|
 |X-MailBugs-Milestone|string|Target milestone for the bug (if defined)|
