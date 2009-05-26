@@ -7,14 +7,31 @@ h2. What is MailBugs?
 MailBugs is a software package developed for tracking and handling
 bugs (and/or tasks) using email only.
 
-h2. Why?
+MailBugs is designed for plugging right into existing mailinglists
+
+h3. Why?
 
 Most developers allready spend a lot of time using emails, and are
 proficient and fast using email. Most developers dont like having to
 click in some sort of graphical user interface, when the same job could
 be done in 5 seconds using only commands.
 
-h2. What does ITK stand for?
+h3. What does ITK stand for?
 
 ITK is the IT-section at the student society in Trondheim.
 See http://itk.samfundet.no for more information.
+
+
+h2. Email headers
+
+h3. Headers for interacting with MailBugs
+
+|_. Header|Input type|Action|
+|X-MailBugs-ID|integer|Indicate action on a certain bug-id|
+|X-MailBugs-Status|['open','resolved','wontfix']|Change the status of a bug|
+|X-MailBugs-Milestone|string|Assign the bug to a milestone|
+
+h3. Headers from MailBugs
+|X-MailBugs-ID|integer|Bug-id|
+|X-MailBugs-Status|['open','resolved','wontfix']|The status of a bug|
+|X-MailBugs-Milestone|string|Target milestone for the bug (if defined)|
